@@ -150,7 +150,6 @@
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  /* border: 1px solid black; */
 }
 
 .service-title {
@@ -267,8 +266,6 @@
   padding: 80px 100px 100px 100px;
   margin-bottom: 50px;
 }
-.mission-content {
-}
 
 .missions {
   display: flex;
@@ -290,4 +287,75 @@
   font-size: 16px;
   color: #727272;
   padding: 15px;
+}
+
+/*----- Make Website Responsive-----*/
+
+@media screen and (max-width: 576px) {
+  .navbar,
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .header-title {
+    font-size: 30px;
+  }
+  .header img {
+    width: 100%;
+  }
+
+  .our-features {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .feature-imgs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .services {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .services-title,
+  .title,
+  .facts-title,
+  .feature-title {
+    font-size: 30px;
+  }
+
+  .service-experience-img {
+    margin-top: 50px;
+  }
+
+  .facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .our-mission {
+    padding: 15px;
+  }
+  .missions {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .mission {
+    width: 100%;
+  }
+
+  .mission-sub-title {
+    font-size: 24px;
+  }
+  .sponsors {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 50px;
+  }
+
+  .footer {
+    margin-bottom: 75px;
+  }
 }
