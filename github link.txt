@@ -1,0 +1,7 @@
+echo "# g3-architect" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ashikur-rahman-10/g3-architect.git
+git push -u origin main
