@@ -70,6 +70,7 @@
   border: none;
   border-radius: 8px;
   padding: 21px 24px;
+  cursor: pointer;
 }
 
 .header-banner img {
