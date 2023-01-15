@@ -200,6 +200,9 @@
   align-items: center;
   border: 1px solid salmon;
   padding: 30px;
+  transition-property: border-radius;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
 }
 .facts-item h3 {
   font-size: 45px;
@@ -221,8 +224,43 @@
 
   border: 3px solid salmon;
 
+  border-radius: 50%;
+
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/*-- Our mission Section Styles---*/
+.our-missions {
+  background-color: #fff4e749;
+}
+.our-mission {
+  padding: 80px 100px 100px 100px;
+  margin-bottom: 50px;
+}
+
+.missions {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mission {
+  width: 25%;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.mission:hover {
+  box-shadow: #ff900e 0px 0px 0px 1px;
+}
+.mission-sub-title {
+  font-size: 35px;
+  font-weight: 600;
+  color: #424242;
+  padding: 20px;
+  text-align: center;
+}
+.mission-description {
+  font-size: 16px;
+  color: #727272;
+  padding: 15px;
 }
 
 /*----Sponsor Section style----*/
@@ -258,43 +296,18 @@
   padding: 39px;
 }
 
-/*-- Our mission Section Styles---*/
-.our-missions {
-  background-color: #fff4e749;
-}
-.our-mission {
-  padding: 80px 100px 100px 100px;
-  margin-bottom: 50px;
-}
-
-.missions {
-  display: flex;
-  justify-content: space-evenly;
-}
-.mission {
-  width: 25%;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-}
-.mission-sub-title {
-  font-size: 35px;
-  font-weight: 600;
-  color: #424242;
-  padding: 20px;
-  text-align: center;
-}
-.mission-description {
-  font-size: 16px;
-  color: #727272;
-  padding: 15px;
-}
-
 /*----- Make Website Responsive-----*/
 
 @media screen and (max-width: 576px) {
   .navbar,
   .navbar ul {
     flex-direction: column;
+    padding-left: 0;
+  }
+
+  .primary-btn {
+    padding: 8px 12px;
+    font-size: 16px;
   }
 
   .header-title {
@@ -313,7 +326,7 @@
   }
   .services {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .services-title,
   .title,
